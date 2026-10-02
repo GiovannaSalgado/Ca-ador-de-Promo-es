@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caçador de Promoções</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Caçador de Promoções</h1>
+
+    <hr>
+
+    <h2>Pesquisar Produto</h2>
+
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="Digite o nome do produto..."
+        autocomplete="off">
+
+    <br><br>
+
+    <h2>Lojas</h2>
+
+    <label>
+        <input type="checkbox" id="amazon" checked>
+        Amazon
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" id="mercadolivre" checked>
+        Mercado Livre
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" id="shopee" checked>
+        Shopee
+    </label>
+
+    <br><br>
+
+    <h2>Categorias</h2>
+
+    <label>
+        <input type="checkbox" id="eletrodomestico" checked>
+        Eletrodoméstico
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" id="cozinha" checked>
+        Cozinha
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" id="organizacao" checked>
+        Organização
+    </label>
+
+    <br><br>
+
+    <label>
+        <strong>Desconto mínimo (%)</strong>
+    </label>
+
+    <br>
+
+    <input
+        type="number"
+        id="desconto"
+        value="40"
+        min="0"
+        max="100">
+
+    <br><br>
+
+    <label>
+        <strong>Ordenar por:</strong>
+    </label>
+
+    <br>
+
+    <select id="ordenacao">
+        <option value="desconto">Maior desconto</option>
+        <option value="preco">Menor preço</option>
+        <option value="nome">Nome (A-Z)</option>
+    </select>
+
+    <br><br>
+
+    <button id="buscar">
+        Buscar Promoções
+    </button>
+
+    <hr>
+
+    <h2>Cadastrar Produto</h2>
+
+    <input
+        type="text"
+        id="novoNome"
+        placeholder="Nome do produto">
+
+    <br><br>
+
+    <input
+        type="number"
+        id="novoPreco"
+        placeholder="Preço">
+
+    <br><br>
+
+    <input
+        type="number"
+        id="novoDesconto"
+        placeholder="Desconto (%)">
+
+    <br><br>
+
+    <input
+        type="text"
+        id="novaCategoria"
+        placeholder="Categoria">
+
+    <br><br>
+
+    <input
+        type="text"
+        id="novaLoja"
+        placeholder="Loja">
+
+    <br><br>
+
+    <input
+        type="text"
+        id="novoLink"
+        placeholder="Link do produto">
+
+    <br><br>
+
+    <input
+        type="text"
+        id="novaImagem"
+        placeholder="Link da imagem">
+
+    <br><br>
+
+    <button id="adicionarProduto">
+        Adicionar Produto
+    </button>
+
+    <hr>
+
+    <h2 id="contador">
+        Produtos encontrados: 0
+    </h2>
+
+    <div id="listaProdutos" class="lista-produtos"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

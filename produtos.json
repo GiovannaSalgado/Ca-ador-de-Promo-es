@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nome": "Air Fryer Mondial 4L",
+        "preco": 249.90,
+        "desconto": 42,
+        "categoria": "Eletrodoméstico",
+        "loja": "Amazon",
+        "link": "https://www.amazon.com.br",
+        "imagem": "https://placehold.co/300x180?text=Air+Fryer"
+    },
+    {
+        "id": 2,
+        "nome": "Organizador de Gavetas",
+        "preco": 39.90,
+        "desconto": 55,
+        "categoria": "Organização",
+        "loja": "Mercado Livre",
+        "link": "https://www.mercadolivre.com.br",
+        "imagem": "https://placehold.co/300x180?text=Organizador"
+    },
+    {
+        "id": 3,
+        "nome": "Jogo de Panelas",
+        "preco": 179.90,
+        "desconto": 48,
+        "categoria": "Cozinha",
+        "loja": "Amazon",
+        "link": "https://www.amazon.com.br",
+        "imagem": "https://placehold.co/300x180?text=Panelas"
+    },
+    {
+        "id": 4,
+        "nome": "Kit Organizador",
+        "preco": 59.90,
+        "desconto": 63,
+        "categoria": "Organização",
+        "loja": "Shopee",
+        "link": "https://shopee.com.br",
+        "imagem": "https://placehold.co/300x180?text=Kit"
+    }
+]

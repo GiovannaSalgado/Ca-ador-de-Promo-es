@@ -1,0 +1,20 @@
+from flask import Flask, jsonify
+import json
+
+app = Flask(__name__)
+
+@app.route("/")
+def inicio():
+    return "Caçador de Promoções Online!"
+
+@app.route("/produtos")
+def produtos():
+
+    with open("produtos.json", "r", encoding="utf-8") as arquivo:
+        dados = json.load(arquivo)
+
+    return jsonify(dados)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    
